@@ -1,20 +1,18 @@
 <template>
-<div class="app">
-  <header class="header">
-    <h1 class="title">
-      TradingView Charting Library and Vue.js Integration Example
-    </h1>
-  </header>
-  <TVChartContainer />
-</div>
+  <div id="app">
+    <trade-view ref="trade"></trade-view>
+  </div>
 </template>
 
 <script>
-import TVChartContainer from './components/TVChartContainer.vue'
+import TradeView from './components/TradeView'
 export default {
   name: 'app',
   components: {
-    TVChartContainer
+    TradeView
+  },
+  mounted() {
+    this.$refs.trade.init('BTCUSDT', 5)
   }
 }
 </script>
