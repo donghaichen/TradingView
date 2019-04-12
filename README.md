@@ -1,7 +1,7 @@
-# TradingView Charting Library and Vue.js Integration Example (TypeScript)
+# TradingView  Vue.js demo with websocket
 
 ## How to start
 
 1. Install dependencies `npm install`.
 
-1. Run `npm run serve`. It will build the project and open a default browser with the Charting Library.
+1. Run `npm run serve`. 
